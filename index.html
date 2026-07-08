@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Talencia Formation — Organisme de formation certifié Qualiopi | Colmar, Alsace</title>
+<meta name="description" content="Talencia Formation, organisme certifié Qualiopi à Colmar. Formations management, autorisation de conduite, SST, sécurité incendie pour entreprises du Haut-Rhin. Financement OPCO disponible.">
+
+<link rel="icon" type="image/png" href="images/logo-icon.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div style="display:flex;align-items:center;gap:20px;">
+    <a href="mailto:contact@talencia-formation.fr" style="display:flex;align-items:center;gap:7px;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;opacity:.85;"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+      contact@talencia-formation.fr
+    </a>
+    <a href="tel:+33780958768" style="display:flex;align-items:center;gap:7px;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;opacity:.85;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1 19.79 19.79 0 0 1 1.56 4.5 2 2 0 0 1 3.54 2.31h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.29 6.29l.87-.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      +33 7 80 95 87 68
+    </a>
+  </div>
+  <div style="font-size:.78rem;font-weight:600;color:rgba(255,255,255,.7);letter-spacing:.03em;">
+    Formez-vous aujourd'hui pour réussir demain
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo"><img src="images/logo.png" alt="Talencia Formation — Organisme certifié Qualiopi Colmar Alsace"></a>
+    <ul class="nav-links">
+      <li>
+        <a href="#formations">Nos Formations ▾</a>
+        <div class="dropdown">
+          <div class="dropdown-title">Par domaine</div>
+          <a href="formations/management-leadership.html">Management & Leadership</a>
+          <a href="formations/soft-skills-communication.html">Soft Skills & Communication</a>
+          <a href="formations/sst-sauveteur-secouriste.html">SST & Secourisme</a>
+          <a href="formations/securite-incendie.html">Sécurité Incendie</a>
+          <a href="formations/autorisation-conduite-chariots.html">Autorisation de Conduite</a>
+          <a href="index.html#formations">Voir tout le catalogue</a>
+        </div>
+      </li>
+      <li>
+        <a href="#entreprise">Espace Entreprise ▾</a>
+        <div class="dropdown">
+          <div class="dropdown-title">Solutions entreprise</div>
+          <a href="#financement">Financement OPCO</a>
+          <a href="index.html#formations">Formations Intra-entreprise</a>
+          <a href="contact.html">Demander un devis</a>
+        </div>
+      </li>
+      <li><a href="#methode">Notre méthode</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="nav-cta">Devis gratuit</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MENU MOBILE -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-section-title">Nos Formations</div>
+
+  <button class="mobile-cat" onclick="toggleCat(this)">Management & Leadership<span class="mobile-cat-arrow">▾</span></button>
+  <div class="mobile-subnav">
+    <a href="formations/management-leadership.html" onclick="closeMenu()">Management & Leadership</a>
+    <a href="formations/soft-skills-communication.html" onclick="closeMenu()">Soft Skills & Communication</a>
+  </div>
+
+  <button class="mobile-cat" onclick="toggleCat(this)">Sécurité<span class="mobile-cat-arrow">▾</span></button>
+  <div class="mobile-subnav">
+    <a href="formations/sst-sauveteur-secouriste.html" onclick="closeMenu()">SST — Sauveteur Secouriste</a>
+    <a href="formations/securite-incendie.html" onclick="closeMenu()">Sécurité Incendie & Évacuation</a>
+    <a href="formations/autorisation-conduite-chariots.html" onclick="closeMenu()">Autorisation de Conduite</a>
+    <a href="formations/premiers-secours-rcp.html" onclick="closeMenu()">Premiers Secours & RCP</a>
+    <a href="formations/securite-alimentaire.html" onclick="closeMenu()">Sécurité Alimentaire</a>
+  </div>
+
+  <button class="mobile-cat" onclick="toggleCat(this)">Digital<span class="mobile-cat-arrow">▾</span></button>
+  <div class="mobile-subnav">
+    <a href="formations/developpement-web-creation-site.html" onclick="closeMenu()">Développement Web</a>
+    <a href="formations/reseaux-sociaux-digital.html" onclick="closeMenu()">Réseaux Sociaux & Digital</a>
+  </div>
+
+  <div class="mobile-section-title">Navigation</div>
+  <a href="index.html#pourquoi" onclick="closeMenu()">À propos</a>
+  <a href="index.html#methode" onclick="closeMenu()">Notre méthode</a>
+  <a href="index.html#faq" onclick="closeMenu()">FAQ</a>
+  <a href="contact.html" onclick="closeMenu()">Contact</a>
+  <a href="contact.html" class="mobile-cta" onclick="closeMenu()">Demander un devis gratuit →</a>
+</div>
+
+<!-- HERO -->
+<section id="hero" style="position:relative;overflow:hidden;">
+  <div style="position:absolute;inset:0;z-index:0;">
+    <img src="images/photo-hero.jpg" alt="Formation professionnelle Talencia" style="width:100%;height:100%;object-fit:cover;object-position:center top;">
+    <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(13,43,94,0.90) 0%,rgba(13,43,94,0.75) 55%,rgba(13,43,94,0.50) 100%);"></div>
+  </div>
+  <div class="hero-inner" style="position:relative;z-index:2;">
+    <div class="hero-label">Organisme de formation certifié Qualiopi — Colmar, Alsace</div>
+    <h1>Développez vos équipes avec des formations sur-mesure</h1>
+    <p>Talencia Formation accompagne les entreprises du Haut-Rhin dans la montée en compétences de leurs collaborateurs. Formations certifiées, finançables OPCO, animées par des experts terrain.</p>
+    <div class="hero-btns">
+      <a href="#formations" class="btn-white">Découvrir nos formations →</a>
+      <a href="contact.html" class="btn-outline-white">Demander un devis gratuit</a>
+    </div>
+    <div class="hero-badges">
+      <span class="hero-badge">🏅 Certifié Qualiopi</span>
+      <span class="hero-badge">✓ Financement OPCO</span>
+      <span class="hero-badge">📍 Colmar & Alsace</span>
+      <span class="hero-badge">🎓 Formateurs experts terrain</span>
+    </div>
+  </div>
+</section>
+
+
+  </div>
+</div>
+
+<!-- POURQUOI -->
+<section class="section gray" id="pourquoi">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-eyebrow">Pourquoi Talencia</div>
+      <div class="section-title">Des solutions de formation qui font la différence</div>
+      <div class="section-sub">Nous ne faisons pas de la formation pour cocher des cases. Chaque programme est conçu pour produire un impact concret et mesurable sur le terrain.</div>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-ico">🧑‍🏫</div>
+        <div>
+          <div class="why-title">Formateurs experts terrain</div>
+          <div class="why-text">Des professionnels expérimentés et certifiés qui partagent leur expertise issue du monde de l'entreprise.</div>
+        </div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-ico">🎯</div>
+        <div>
+          <div class="why-title">Formations sur-mesure</div>
+          <div class="why-text">Des programmes adaptés à vos besoins spécifiques, votre secteur et la culture de votre entreprise.</div>
+        </div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-ico">📊</div>
+        <div>
+          <div class="why-title">Résultats mesurables</div>
+          <div class="why-text">Évaluation des acquis formalisée et suivi post-formation pour garantir l'application des compétences.</div>
+        </div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-ico">💰</div>
+        <div>
+          <div class="why-title">Financement facilité</div>
+          <div class="why-text">Nous gérons votre dossier OPCO de A à Z pour simplifier vos démarches administratives.</div>
+        </div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-ico">📍</div>
+        <div>
+          <div class="why-title">Flexibilité maximale</div>
+          <div class="why-text">Formations en présentiel dans vos locaux, distanciel ou format hybride selon vos contraintes.</div>
+        </div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-ico">🏅</div>
+        <div>
+          <div class="why-title">Certifié Qualiopi</div>
+          <div class="why-text">Gage de qualité reconnu par l'État. Nos formations sont éligibles aux financements OPCO et France Travail.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMATIONS -->
+<section class="section" id="formations">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-eyebrow">Catalogue formations</div>
+      <div class="section-title">Nos formations les plus demandées</div>
+      <div class="section-sub">6 domaines d'expertise pour couvrir tous vos besoins. Toutes nos formations sont finançables via votre OPCO.</div>
+    </div>
+    <div class="formations-tabs" style="margin-top:24px;">
+      <button class="ftab active" onclick="filterFormations('toutes', this)">Toutes</button>
+      <button class="ftab" onclick="filterFormations('management', this)">Management</button>
+      <button class="ftab" onclick="filterFormations('securite', this)">Sécurité</button>
+      <button class="ftab" onclick="filterFormations('digital', this)">Digital</button>
+      <button class="ftab" onclick="filterFormations('surmesure', this)">Sur mesure</button>
+    </div>
+    <div class="f-grid">
+
+      <div class="f-card reveal" data-category="management">
+        <div class="f-card-top"></div>
+        <div class="f-card-body">
+          <div class="f-badge blue">Top formation</div>
+          <div class="f-card-header">
+            <div class="f-picto"><img src="images/picto-management.jpg" alt="Formation management Alsace"></div>
+            <div class="f-name" data-cat="management">Management & Leadership</div>
+          </div>
+          <div class="f-desc">Développez vos compétences managériales et apprenez à animer efficacement vos équipes avec leadership et assurance.</div>
+          <ul class="f-bullets">
+            <li>Leadership situationnel</li>
+            <li>Motivation et engagement d'équipe</li>
+            <li>Conduite du changement</li>
+          </ul>
+          <div class="f-duration">⏱ Durée adaptée à vos besoins</div>
+          <a href="formations/management-leadership.html" class="f-link">Découvrir →</a>
+        </div>
+      </div>
+
+      <div class="f-card reveal" data-category="management">
+        <div class="f-card-top"></div>
+        <div class="f-card-body">
+          <div class="f-badge blue">Incontournable</div>
+          <div class="f-card-header">
+            <div class="f-picto"><img src="images/picto-softskills.jpg" alt="Formation soft skills communication"></div>
+            <div class="f-name" data-cat="management">Soft Skills & Communication</div>
+          </div>
+          <div class="f-desc">Renforcez les compétences relationnelles et comportementales qui font la différence au quotidien dans vos équipes.</div>
+          <ul class="f-bullets">
+            <li>Communication assertive</li>
+            <li>Intelligence émotionnelle</li>
+            <li>Gestion du stress</li>
+          </ul>
+          <div class="f-duration">⏱ Durée adaptée à vos besoins</div>
+          <a href="formations/soft-skills-communication.html" class="f-link">Découvrir →</a>
+        </div>
+      </div>
+
+      <div class="f-card reveal" data-category="securite">
+        <div class="f-card-top"></div>
+        <div class="f-card-body">
+          <div class="f-badge green">Formation obligatoire</div>
+          <div class="f-card-header">
+            <div class="f-picto"><img src="images/picto-sst.jpg" alt="Formation SST Sauveteur Secouriste Travail Alsace"></div>
+            <div class="f-name" data-cat="securite">SST — Sauveteur Secouriste</div>
+          </div>
+          <div class="f-desc">Formation Sauveteur Secouriste du Travail initiale et recyclage. Obligatoire dans de nombreux secteurs, éligible OPCO.</div>
+          <ul class="f-bullets">
+            <li>SST Initial & Recyclage</li>
+            <li>Gestes de premiers secours</li>
+            <li>Prévention des risques professionnels</li>
+          </ul>
+          <div class="f-duration">⏱ 1 à 2 jours</div>
+          <a href="formations/sst-sauveteur-secouriste.html" class="f-link">Découvrir →</a>
+        </div>
+      </div>
+
+      <div class="f-card reveal" data-category="securite">
+        <div class="f-card-top"></div>
+        <div class="f-card-body">
+          <div class="f-badge green">Formation obligatoire</div>
+          <div class="f-card-header">
+            <div class="f-picto"><img src="images/picto-incendie.jpg" alt="Formation sécurité incendie évacuation Haut-Rhin"></div>
+            <div class="f-name" data-cat="securite">Sécurité Incendie & Évacuation</div>
+          </div>
+          <div class="f-desc">Sensibilisez vos équipes à la prévention incendie, la manipulation d'extincteurs et les procédures d'évacuation réglementaires.</div>
+          <ul class="f-bullets">
+            <li>Guide & Serre-file</li>
+            <li>Manipulation extincteurs</li>
+            <li>Plan d'évacuation</li>
+          </ul>
+          <div class="f-duration">⏱ 1 journée</div>
+          <a href="formations/securite-incendie.html" class="f-link">Découvrir →</a>
+        </div>
+      </div>
+
+      <div class="f-card reveal" data-category="securite">
+        <div class="f-card-top"></div>
+        <div class="f-card-body">
+          <div class="f-badge orange">Conduite en sécurité</div>
+          <div class="f-card-header">
+            <div class="f-picto"><img src="images/picto-caces.jpg" alt="Autorisation de conduite chariot élévateur Alsace"></div>
+            <div class="f-name" data-cat="securite">Autorisation de Conduite</div>
+          </div>
+          <div class="f-desc">Formation courte à la conduite en sécurité de chariots élévateurs, permettant à l'employeur de délivrer une autorisation de conduite.</div>
+          <ul class="f-bullets">
+            <li>Théorie & pratique en 4h</li>
+            <li>Chariots élévateurs frontaux</li>
+            <li>Délivrance autorisation employeur</li>
+          </ul>
+          <div class="f-duration">⏱ 4 heures</div>
+          <a href="formations/autorisation-conduite-chariots.html" class="f-link">Découvrir →</a>
+        </div>
+      </div>
+
+      <div class="f-card reveal" data-category="securite">
+        <div class="f-card-top"></div>
+        <div class="f-card-body">
+          <div class="f-badge blue">Premiers secours</div>
+          <div class="f-card-header">
+            <div class="f-picto"><img src="images/picto-rcp.jpg" alt="Formation premiers secours RCP Colmar"></div>
+            <div class="f-name" data-cat="securite">Premiers Secours & RCP</div>
+          </div>
+          <div class="f-desc">Formez vos collaborateurs aux gestes qui sauvent : RCP, utilisation du défibrillateur et conduite à tenir en cas d'urgence.</div>
+          <ul class="f-bullets">
+            <li>RCP & utilisation DAE</li>
+            <li>Gestes d'urgence vitale</li>
+            <li>PSC1 possible</li>
+          </ul>
+          <div class="f-duration">⏱ 1 journée</div>
+          <a href="formations/premiers-secours-rcp.html" class="f-link">Découvrir →</a>
+        </div>
+      </div>
+
+      <div class="f-card reveal" data-category="securite">
+        <div class="f-card-top"></div>
+        <div class="f-card-body">
+          <div class="f-badge blue">Nouveau</div>
+          <div class="f-card-header">
+            <div class="f-picto" style="font-size:1.4rem;">🍽️</div>
+            <div class="f-name" data-cat="securite">Sécurité Alimentaire</div>
+          </div>
+          <div class="f-desc">Formez vos équipes aux bonnes pratiques d'hygiène alimentaire, à la réglementation HACCP et à la prévention des risques sanitaires en milieu professionnel.</div>
+          <ul class="f-bullets"><li>Méthode HACCP</li><li>Hygiène et sécurité alimentaire</li><li>Réglementation en vigueur</li></ul>
+          <div class="f-duration">⏱ 7 heures</div>
+          <a href="formations/securite-alimentaire.html" class="f-link">Découvrir →</a>
+        </div>
+      </div>
+
+      <div class="f-card reveal" data-category="digital">
+        <div class="f-card-top"></div>
+        <div class="f-card-body">
+          <div class="f-badge blue">Nouveau</div>
+          <div class="f-card-header">
+            <div class="f-picto" style="font-size:1.4rem;">💻</div>
+            <div class="f-name" data-cat="digital">Développement Web & Création de Site</div>
+          </div>
+          <div class="f-desc">Apprenez à créer et gérer votre site internet professionnel. De la conception à la mise en ligne, maîtrisez les outils essentiels du web pour votre activité.</div>
+          <ul class="f-bullets"><li>Création de site internet</li><li>Outils CMS (WordPress...)</li><li>Référencement et visibilité</li></ul>
+          <div class="f-duration">⏱ 14 heures</div>
+          <a href="formations/developpement-web-creation-site.html" class="f-link">Découvrir →</a>
+        </div>
+      </div>
+
+      <div class="f-card reveal" data-category="digital">
+        <div class="f-card-top"></div>
+        <div class="f-card-body">
+          <div class="f-badge blue">Nouveau</div>
+          <div class="f-card-header">
+            <div class="f-picto" style="font-size:1.4rem;">📱</div>
+            <div class="f-name" data-cat="digital">Réseaux Sociaux & Digital</div>
+          </div>
+          <div class="f-desc">Développez votre présence digitale et maîtrisez les réseaux sociaux professionnels. Stratégie de contenu, community management et outils pour accélérer votre croissance en ligne.</div>
+          <ul class="f-bullets"><li>Stratégie réseaux sociaux</li><li>Création de contenu professionnel</li><li>Développement de la visibilité digitale</li></ul>
+          <div class="f-duration">⏱ 7 heures</div>
+          <a href="formations/reseaux-sociaux-digital.html" class="f-link">Découvrir →</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:32px;">
+      <a href="contact.html" class="btn-white" style="background:var(--navy);color:white;display:inline-flex;">Demander un devis sur mesure →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band reveal">
+  <h2>Prêt à développer les compétences de vos équipes ?</h2>
+  <p>Demandez votre devis gratuit et sans engagement. Notre équipe vous répond sous 24h.</p>
+  <div class="cta-list">
+    <div class="cta-item">Devis personnalisé gratuit</div>
+    <div class="cta-item">Accompagnement financement OPCO</div>
+    <div class="cta-item">Réponse sous 24h</div>
+    <div class="cta-item">Intervention toute l'Alsace</div>
+  </div>
+  <a href="contact.html" class="btn-white">Demander un devis gratuit →</a>
+</div>
+
+<!-- CONTACT / DEVIS -->
+<section class="devis-section" id="contact">
+  <div class="devis-inner">
+    <div class="reveal">
+      <div class="section-eyebrow">Contact</div>
+      <div class="contact-info-title">Parlons de votre projet de formation</div>
+      <div class="contact-info-sub">Décrivez-nous votre besoin et nous vous répondons sous 24h avec une proposition adaptée et un plan de financement.</div>
+      <div class="c-item">
+        <div class="c-icon">✉</div>
+        <div>
+          <div class="c-lbl">Email</div>
+          <div class="c-val">contact@talencia-formation.fr</div>
+        </div>
+      </div>
+      <div class="c-item">
+        <div class="c-icon">📍</div>
+        <div>
+          <div class="c-lbl">Localisation</div>
+          <div class="c-val">Colmar, Haut-Rhin — Interventions toute l'Alsace & Grand-Est</div>
+        </div>
+      </div>
+      <div class="c-item">
+        <div class="c-icon">💰</div>
+        <div>
+          <div class="c-lbl">Financement</div>
+          <div class="c-val">Éligible OPCO, CPF & plans de formation d'entreprise</div>
+        </div>
+      </div>
+    </div>
+    <div class="devis-form-card reveal">
+      <div class="devis-form-title">Demande de devis rapide</div>
+      <div class="form-row">
+        <div class="form-group"><label>Prénom *</label><input type="text" placeholder="Jean"></div>
+        <div class="form-group"><label>Nom *</label><input type="text" placeholder="Dupont"></div>
+      </div>
+      <div class="form-group"><label>Entreprise *</label><input type="text" placeholder="Votre société"></div>
+      <div class="form-group"><label>Email professionnel *</label><input type="email" placeholder="jean@entreprise.fr"></div>
+      <div class="form-group"><label>Téléphone</label><input type="tel" placeholder="06 XX XX XX XX"></div>
+      <div class="form-group">
+        <label>Formation souhaitée *</label>
+        <select>
+          <option value="">Sélectionnez...</option>
+          <option>Management & Leadership</option>
+          <option>Soft Skills & Communication</option>
+          <option>SST — Sauveteur Secouriste du Travail</option>
+          <option>Premiers Secours & RCP</option>
+          <option>Sécurité Incendie & Évacuation</option>
+          <option>Autorisation de Conduite Chariots</option>
+          <option>Autre / Sur mesure</option>
+        </select>
+      </div>
+      <div class="form-group"><label>Votre message</label><textarea placeholder="Décrivez votre besoin, le nombre de personnes, vos contraintes..."></textarea></div>
+      <div class="form-check">
+        <input type="checkbox">
+        <span>J'accepte que mes données soient utilisées pour me recontacter. <a href="confidentialite.html">Politique de confidentialité</a></span>
+      </div>
+      <button class="form-submit">Envoyer ma demande →</button>
+      <div class="form-note">Réponse garantie sous 24h • Sans engagement</div>
+    </div>
+  </div>
+</section>
+
+<!-- MÉTHODE -->
+<section class="section gray" id="methode">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-eyebrow">Notre méthode</div>
+      <div class="section-title">Comment ça marche ?</div>
+      <div class="section-sub">Un parcours simple et efficace vers la montée en compétences de vos équipes.</div>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card reveal">
+        <div class="step-num">1</div>
+        <div>
+          <div class="step-title">Analyse de vos besoins</div>
+          <div class="step-text">Nous étudions ensemble vos objectifs, vos contraintes et vos équipes pour vous proposer la solution la plus adaptée.</div>
+        </div>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-num">2</div>
+        <div>
+          <div class="step-title">Devis personnalisé</div>
+          <div class="step-text">Vous recevez un devis détaillé avec le programme, les modalités de formation et les options de financement.</div>
+        </div>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-num">3</div>
+        <div>
+          <div class="step-title">Accompagnement financement</div>
+          <div class="step-text">Nous gérons votre dossier OPCO de A à Z pour simplifier vos démarches administratives.</div>
+        </div>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-num">4</div>
+        <div>
+          <div class="step-title">Formation & suivi</div>
+          <div class="step-text">Vos équipes suivent la formation et bénéficient d'un suivi post-formation pour ancrer les acquis dans la durée.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-eyebrow">FAQ</div>
+      <div class="section-title">Questions fréquentes</div>
+      <div class="section-sub">Tout ce que vous devez savoir sur nos formations.</div>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item open">
+        <button class="faq-q">Comment financer ma formation ?</button>
+        <div class="faq-a">Plusieurs options s'offrent à vous : les OPCO (opérateurs de compétences), France Travail ou le financement entreprise via le plan de développement des compétences. Nous vous accompagnons dans toutes vos démarches et gérons le dossier à votre place.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Les formations sont-elles certifiantes ?</button>
+        <div class="faq-a">Toutes nos formations délivrent une attestation de fin de formation. Des certifications reconnues (SST, PSC1) sont possibles pour certaines formations, et nos formations à la conduite permettent à l'employeur de délivrer une autorisation de conduite. Nous sommes certifiés Qualiopi, gage de qualité reconnu par l'État.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Quelle est la durée moyenne des formations ?</button>
+        <div class="faq-a">La durée varie selon les formations : 4 heures pour l'autorisation de conduite, 1 journée pour les formations sécurité (SST, incendie), jusqu'à plusieurs jours pour les parcours management. Nous adaptons toujours la durée à vos contraintes.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Les formations sont-elles disponibles à distance ?</button>
+        <div class="faq-a">Nous proposons des formations en présentiel (dans vos locaux ou les nôtres à Colmar), en distanciel ou en format hybride. Nous nous adaptons à vos contraintes géographiques et organisationnelles.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Intervenez-vous en dehors de Colmar ?</button>
+        <div class="faq-a">Oui, nous intervenons dans tout le Haut-Rhin et la région Alsace. Nous pouvons également intervenir dans tout le Grand-Est selon les formations. Contactez-nous pour en discuter.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Proposez-vous des formations sur-mesure ?</button>
+        <div class="faq-a">Oui, c'est notre cœur de métier. Nous concevons des formations personnalisées adaptées à vos besoins spécifiques, votre secteur d'activité et la culture de votre entreprise. Contactez-nous pour co-construire votre programme.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+
+
+<!-- BLOC QUALIOPI RÉGLEMENTAIRE -->
+<section class="qualiopi-section" id="qualiopi">
+  <div class="qualiopi-inner">
+    <div style="text-align:center;">
+      <div class="section-eyebrow">Certification qualité</div>
+      <h2 class="section-title">Notre engagement Qualiopi</h2>
+      <p class="section-sub" style="margin:0 auto;">Talencia Formation est certifié Qualiopi, gage de qualité reconnu par l'État, indispensable pour bénéficier des financements OPCO.</p>
+    </div>
+
+    <div class="qualiopi-card">
+      <!-- IMAGE OFFICIELLE QUALIOPI — NE PAS MODIFIER -->
+      <img src="images/logo-qualiopi-officiel.png" alt="Qualiopi — Processus certifié — République Française — Actions de Formation" style="max-width:380px;width:100%;display:block;margin:0 auto 24px;">
+
+      <!-- Détails du certificat -->
+      <div class="qualiopi-details">
+        <div class="qualiopi-detail-item"><strong>N° Certificat</strong> : CERT_S1025_1112</div>
+        <div class="qualiopi-detail-item"><strong>Validité</strong> : jusqu'au 09.11.2028</div>
+        <div class="qualiopi-detail-item"><strong>SIREN</strong> : 988 326 492</div>
+        <div class="qualiopi-detail-item"><strong>N° DA</strong> : 44680398168</div>
+      </div>
+
+      <!-- Bouton téléchargement certificat -->
+      <a href="images/certificat-qualiopi.pdf" target="_blank" download class="btn-download-certif">
+        ⬇ Télécharger notre certificat Qualiopi
+      </a>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Talencia Formation Colmar Alsace">
+        <p class="footer-desc">Organisme de formation professionnelle certifié Qualiopi. Nous accompagnons les entreprises du Haut-Rhin dans le développement des compétences de leurs équipes.</p>
+      </div>
+      <div class="footer-grid">
+        <div>
+          <div class="footer-col-title">Formations</div>
+          <ul class="footer-links">
+            <li><a href="formations/management-leadership.html">Management & Leadership</a></li>
+            <li><a href="formations/soft-skills-communication.html">Soft Skills</a></li>
+            <li><a href="formations/sst-sauveteur-secouriste.html">SST & Secourisme</a></li>
+            <li><a href="formations/securite-incendie.html">Sécurité Incendie</a></li>
+            <li><a href="formations/autorisation-conduite-chariots.html">Autorisation de Conduite</a></li>
+            <li><a href="contact.html">Sur mesure</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Talencia Formation</div>
+          <ul class="footer-links">
+            <li><a href="#pourquoi">À propos</a></li>
+            <li><a href="#methode">Notre méthode</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Nous contacter</div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;opacity:.7;"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <a href="mailto:contact@talencia-formation.fr">contact@talencia-formation.fr</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;opacity:.7;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1 19.79 19.79 0 0 1 1.56 4.5 2 2 0 0 1 3.54 2.31h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.29 6.29l.87-.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+33780958768">+33 7 80 95 87 68</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;opacity:.7;"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            Colmar, Haut-Rhin
+          </div>
+          <div style="margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.08);">
+            <div style="font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:8px;">Référent handicap</div>
+            <div style="font-size:.85rem;color:rgba(255,255,255,.7);font-weight:500;margin-bottom:10px;">M. Fabrizio</div>
+            <a href="contact.html" style="display:inline-flex;align-items:center;gap:6px;font-size:.78rem;font-weight:600;color:rgba(255,255,255,.6);border:1px solid rgba(255,255,255,.2);border-radius:6px;padding:7px 12px;text-decoration:none;transition:all .15s;" onmouseover="this.style.color='white';this.style.borderColor='rgba(255,255,255,.5)'" onmouseout="this.style.color='rgba(255,255,255,.6)';this.style.borderColor='rgba(255,255,255,.2)'">
+              Nous contacter →
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 Talencia Formation. Tous droits réservés.</div>
+      <div class="footer-bottom-links">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="cgv.html">CGV</a>
+        <a href="confidentialite.html">Politique de confidentialité</a>
+        <a href="reglement-interieur.html">Règlement intérieur</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+
+<script>
+function toggleMenu() {
+  var menu = document.getElementById('mobileMenu');
+  var btn = document.getElementById('hamburger');
+  menu.classList.toggle('open');
+  btn.classList.toggle('open');
+}
+function closeMenu() {
+  document.getElementById('mobileMenu').classList.remove('open');
+  document.getElementById('hamburger').classList.remove('open');
+}
+function toggleCat(btn) {
+  btn.classList.toggle('open');
+  btn.nextElementSibling.classList.toggle('open');
+}
+// Fermer si on clique ailleurs
+document.addEventListener('click', function(e) {
+  var menu = document.getElementById('mobileMenu');
+  var btn = document.getElementById('hamburger');
+  if (menu && btn && !menu.contains(e.target) && !btn.contains(e.target)) {
+    menu.classList.remove('open');
+    btn.classList.remove('open');
+  }
+});
+</script>
+<script>// Formations filter
+function filterFormations(cat, btn) {
+  // Active tab
+  document.querySelectorAll('.ftab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  // Filter cards
+  document.querySelectorAll('.f-card').forEach(card => {
+    if (cat === 'toutes' || card.dataset.category === cat) {
+      card.style.display = '';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}</script>
+</body>
+</html>

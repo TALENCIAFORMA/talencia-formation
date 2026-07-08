@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Réseaux Sociaux & Développement Digital — Talencia Formation | Colmar, Alsace</title>
+<meta name="description" content="Développez votre présence digitale et maîtrisez les réseaux sociaux professionnels. Stratégie de contenu, community management et outils pour accélérer votre croissance en ligne.">
+<link rel="icon" type="image/png" href="../images/logo-icon.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="topbar">
+  <div style="display:flex;align-items:center;gap:20px;">
+    <a href="mailto:contact@talencia-formation.fr" style="display:flex;align-items:center;gap:7px;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;opacity:.85;"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+      contact@talencia-formation.fr
+    </a>
+    <a href="tel:+33780958768" style="display:flex;align-items:center;gap:7px;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;opacity:.85;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1 19.79 19.79 0 0 1 1.56 4.5 2 2 0 0 1 3.54 2.31h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.29 6.29l.87-.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      +33 7 80 95 87 68
+    </a>
+  </div>
+  <div style="font-size:.78rem;font-weight:600;color:rgba(255,255,255,.7);letter-spacing:.03em;">Formez-vous aujourd'hui pour réussir demain</div>
+</div>
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo"><img src="../images/logo.png" alt="Talencia Formation"></a>
+    <ul class="nav-links">
+      <li><a href="../index.html#formations">Nos Formations ▾</a>
+        <div class="dropdown"><div class="dropdown-title">Par domaine</div>
+          <a href="management-leadership.html">Management & Leadership</a>
+          <a href="soft-skills-communication.html">Soft Skills & Communication</a>
+          <a href="sst-sauveteur-secouriste.html">SST & Secourisme</a>
+          <a href="securite-incendie.html">Sécurité Incendie</a>
+          <a href="autorisation-conduite-chariots.html">Autorisation de Conduite</a>
+          <a href="premiers-secours-rcp.html">Premiers Secours & RCP</a>
+          <a href="securite-alimentaire.html">Sécurité Alimentaire</a>
+          <a href="developpement-web-creation-site.html">Développement Web</a>
+          <a href="reseaux-sociaux-digital.html">Réseaux Sociaux & Digital</a>
+        </div>
+      </li>
+      <li><a href="../index.html#pourquoi">À propos</a></li>
+      <li><a href="../index.html#methode">Notre méthode</a></li>
+      <li><a href="../index.html#faq">FAQ</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li><a href="../contact.html" class="nav-cta">Devis gratuit</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-section-title">Nos Formations</div>
+
+  <button class="mobile-cat" onclick="toggleCat(this)">Management & Leadership<span class="mobile-cat-arrow">▾</span></button>
+  <div class="mobile-subnav">
+    <a href="management-leadership.html" onclick="closeMenu()">Management & Leadership</a>
+    <a href="soft-skills-communication.html" onclick="closeMenu()">Soft Skills & Communication</a>
+  </div>
+
+  <button class="mobile-cat" onclick="toggleCat(this)">Sécurité<span class="mobile-cat-arrow">▾</span></button>
+  <div class="mobile-subnav">
+    <a href="sst-sauveteur-secouriste.html" onclick="closeMenu()">SST — Sauveteur Secouriste</a>
+    <a href="securite-incendie.html" onclick="closeMenu()">Sécurité Incendie & Évacuation</a>
+    <a href="autorisation-conduite-chariots.html" onclick="closeMenu()">Autorisation de Conduite</a>
+    <a href="premiers-secours-rcp.html" onclick="closeMenu()">Premiers Secours & RCP</a>
+    <a href="securite-alimentaire.html" onclick="closeMenu()">Sécurité Alimentaire</a>
+  </div>
+
+  <button class="mobile-cat" onclick="toggleCat(this)">Digital<span class="mobile-cat-arrow">▾</span></button>
+  <div class="mobile-subnav">
+    <a href="developpement-web-creation-site.html" onclick="closeMenu()">Développement Web</a>
+    <a href="reseaux-sociaux-digital.html" onclick="closeMenu()">Réseaux Sociaux & Digital</a>
+  </div>
+
+  <div class="mobile-section-title">Navigation</div>
+  <a href="../index.html#pourquoi" onclick="closeMenu()">À propos</a>
+  <a href="../index.html#methode" onclick="closeMenu()">Notre méthode</a>
+  <a href="../index.html#faq" onclick="closeMenu()">FAQ</a>
+  <a href="../contact.html" onclick="closeMenu()">Contact</a>
+  <a href="../contact.html" class="mobile-cta" onclick="closeMenu()">Demander un devis gratuit →</a>
+</div>
+
+<div class="breadcrumb"><div class="breadcrumb-inner"><a href="../index.html">Accueil</a> <span>/</span> <a href="../index.html#formations">Formations</a> <span>/</span> <span class="current">Réseaux Sociaux & Développement Digital</span></div></div>
+
+<section class="formation-hero" style="padding:0;overflow:hidden;">
+  <div class="formation-hero-with-photo">
+  <div class="formation-hero-inner formation-hero-content">
+    <div class="formation-hero-top">
+      <div class="formation-hero-picto" style="font-size:2rem;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);">📱</div>
+      <div><span class="f-badge blue" style="margin-bottom:8px;">Digital</span><h1>Réseaux Sociaux & Développement Digital</h1></div>
+    </div>
+    <p class="formation-hero-tagline">Développez votre présence digitale et maîtrisez les réseaux sociaux professionnels. Stratégie de contenu, community management et outils pour accélérer votre croissance en ligne.</p>
+    <div class="formation-meta">
+      <div class="formation-meta-item">⏱ 7 heures</div>
+      <div class="formation-meta-item">📍 Présentiel ou distanciel</div>
+      <div class="formation-meta-item">👥 Dirigeants, équipes commerciales et marketing</div>
+      <div class="formation-meta-item">🏅 Éligible OPCO</div>
+    </div>
+    <div class="formation-hero-btns">
+      <a href="../contact.html" class="btn-white">Demander un devis →</a>
+      <button type="button" class="btn-outline-white" onclick="openProgrammeModal()" style="border:1.5px solid rgba(255,255,255,.4);background:none;font-family:'Inter',sans-serif;cursor:pointer;font-size:.9rem;font-weight:600;padding:13px 24px;border-radius:8px;color:white;">Voir le programme</button>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section class="formation-body">
+  <div class="formation-body-inner">
+    <div class="formation-main">
+      <h2>Objectifs de la formation</h2>
+      <p>À l'issue de cette formation, les participants seront en mesure de :</p>
+      <ul class="formation-objectifs"><li>Comprendre les enjeux des réseaux sociaux pour son activité professionnelle</li><li>Choisir les bons réseaux sociaux selon son secteur et ses objectifs</li><li>Créer une stratégie de contenu efficace et régulière</li><li>Produire des visuels et contenus attractifs avec des outils simples</li><li>Analyser ses performances et ajuster sa stratégie digitale</li></ul>
+      <h2>Public concerné</h2>
+      <p>Dirigeants, équipes commerciales et marketing (10 stagiaires max)</p>
+      <h2>Modalités & financement</h2>
+      <p>Cette formation est dispensée en présentiel ou distanciel, dans vos locaux ou à distance. Elle est éligible aux financements OPCO, au plan de développement des compétences et selon les cas au CPF. Nous vous accompagnons dans toutes vos démarches de financement.</p>
+    </div>
+    <aside class="formation-sidebar">
+      <div class="sidebar-card">
+        <div class="sidebar-card-title">Informations clés</div>
+        <div class="sidebar-fact"><span class="sidebar-fact-label">Durée</span><span class="sidebar-fact-value">7 heures</span></div>
+        <div class="sidebar-fact"><span class="sidebar-fact-label">Format</span><span class="sidebar-fact-value">Présentiel ou distanciel</span></div>
+        <div class="sidebar-fact"><span class="sidebar-fact-label">Public</span><span class="sidebar-fact-value">Dirigeants, équipes commerciales et marketing</span></div>
+        <div class="sidebar-fact"><span class="sidebar-fact-label">Certification</span><span class="sidebar-fact-value">Attestation délivrée</span></div>
+        <button onclick="openProgrammeModal()" style="width:100%;padding:13px;background:var(--navy);color:white;border:none;border-radius:8px;font-family:'Inter',sans-serif;font-size:.9rem;font-weight:600;cursor:pointer;margin:16px 0 0;">Voir le programme complet</button>
+        <div class="sidebar-financ">💰 Éligible OPCO, CPF et plan de développement des compétences.</div>
+      </div>
+      <div class="sidebar-card" style="position:static;">
+        <div class="sidebar-card-title">Formations associées</div>
+        <div class="related-formations"><a href="developpement-web-creation-site.html" class="related-item"><div class="related-picto" style="font-size:1.2rem;">💻</div><div class="related-name">Développement Web & Création de Site</div></a><a href="management-leadership.html" class="related-item"><div class="related-picto"><img src="../images/picto-management.jpg" alt="Management & Leadership"></div><div class="related-name">Management & Leadership</div></a></div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<div class="modal-overlay" id="programmeModal">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div>
+        <div class="modal-header-title">Programme — Réseaux Sociaux & Développement Digital</div>
+        <div class="modal-header-sub">7 heures · Dirigeants, équipes commerciales et marketing (10 stagiaires max)</div>
+      </div>
+      <button type="button" class="modal-close" onclick="closeProgrammeModal()" aria-label="Fermer">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="fp-meta-grid">
+        <div class="fp-meta-item"><div class="fp-meta-k">Durée</div><div class="fp-meta-v">7 heures</div></div>
+        <div class="fp-meta-item"><div class="fp-meta-k">Public</div><div class="fp-meta-v">Dirigeants, équipes commerciales et marketing (10 stagiaires max)</div></div>
+      </div>
+      <div class="fp-section">
+        <div class="fp-label">Objectifs pédagogiques</div>
+        <ul class="fp-objectifs"><li>Comprendre les enjeux des réseaux sociaux pour son activité professionnelle</li><li>Choisir les bons réseaux sociaux selon son secteur et ses objectifs</li><li>Créer une stratégie de contenu efficace et régulière</li><li>Produire des visuels et contenus attractifs avec des outils simples</li><li>Analyser ses performances et ajuster sa stratégie digitale</li></ul>
+      </div>
+      <div class="fp-section">
+        <div class="fp-label">Plan de la formation</div>
+        <div class="fp-plan"><div class="fp-step"><div class="fp-step-time">30 min</div><div class="fp-step-body"><div class="fp-step-title">Introduction au digital</div><ul class="fp-step-list"><li>Panorama des réseaux sociaux en 2025</li><li>Choisir les bons réseaux selon son activité</li></ul></div></div><div class="fp-step"><div class="fp-step-time">60 min</div><div class="fp-step-body"><div class="fp-step-title">Stratégie de contenu</div><ul class="fp-step-list"><li>Définir sa ligne éditoriale</li><li>Calendrier éditorial</li><li>Les types de contenus qui performent</li></ul></div></div><div class="fp-step"><div class="fp-step-time">60 min</div><div class="fp-step-body"><div class="fp-step-title">Création de visuels</div><ul class="fp-step-list"><li>Canva et outils gratuits</li><li>Formats selon les plateformes</li><li>Identité visuelle cohérente</li></ul></div></div><div class="fp-pause">— Pause (10 min) —</div><div class="fp-step"><div class="fp-step-time">60 min</div><div class="fp-step-body"><div class="fp-step-title">LinkedIn professionnel</div><ul class="fp-step-list"><li>Optimiser son profil et sa page entreprise</li><li>Créer du contenu B2B engageant</li><li>Développer son réseau</li></ul></div></div><div class="fp-step"><div class="fp-step-time">60 min</div><div class="fp-step-body"><div class="fp-step-title">Instagram et Facebook</div><ul class="fp-step-list"><li>Stratégie de contenu visuel</li><li>Stories et Reels</li><li>Publicité et sponsored posts</li></ul></div></div><div class="fp-step"><div class="fp-step-time">60 min</div><div class="fp-step-body"><div class="fp-step-title">Analyse et performance</div><ul class="fp-step-list"><li>Indicateurs clés (KPI)</li><li>Outils d'analyse natifs</li><li>Ajuster sa stratégie selon les données</li></ul></div></div><div class="fp-step"><div class="fp-step-time">30 min</div><div class="fp-step-body"><div class="fp-step-title">Évaluation et plan d'action</div><ul class="fp-step-list"><li>Quiz de validation</li><li>Plan d'action 30 jours personnalisé</li></ul></div></div></div>
+      </div>
+      <div class="fp-section">
+        <div class="fp-label">Supports pédagogiques</div>
+        <div class="fp-supports"><span class="fp-support-chip">📌 Diaporama</span><span class="fp-support-chip">📌 Accès à Canva Pro pendant la formation</span><span class="fp-support-chip">📌 Guide pratique des réseaux sociaux</span><span class="fp-support-chip">📌 Templates de contenus offerts</span></div>
+      </div></div>
+    <div class="modal-footer">
+      <a href="../contact.html" class="btn-white" style="background:var(--navy);color:white;">Demander un devis →</a>
+      <button type="button" onclick="closeProgrammeModal()" style="background:var(--g100);color:var(--navy);border:none;padding:13px 24px;border-radius:8px;font-size:.9rem;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;">Fermer</button>
+    </div>
+  </div>
+</div>
+
+<div class="cta-band">
+  <h2>Intéressé par cette formation ?</h2>
+  <p>Devis gratuit — Réponse sous 24h — Financement OPCO disponible</p>
+  <a href="../contact.html" class="btn-white">Demander un devis →</a>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="../images/logo.png" alt="Talencia Formation">
+        <p class="footer-desc">Organisme de formation certifié Qualiopi. Colmar, Haut-Rhin.</p>
+      </div>
+      <div class="footer-grid">
+        <div><div class="footer-col-title">Formations</div><ul class="footer-links">
+          <li><a href="management-leadership.html">Management & Leadership</a></li>
+          <li><a href="soft-skills-communication.html">Soft Skills</a></li>
+          <li><a href="sst-sauveteur-secouriste.html">SST & Secourisme</a></li>
+          <li><a href="securite-incendie.html">Sécurité Incendie</a></li>
+          <li><a href="autorisation-conduite-chariots.html">Autorisation de Conduite</a></li>
+          <li><a href="premiers-secours-rcp.html">Premiers Secours</a></li>
+          <li><a href="securite-alimentaire.html">Sécurité Alimentaire</a></li>
+          <li><a href="developpement-web-creation-site.html">Développement Web</a></li>
+          <li><a href="reseaux-sociaux-digital.html">Réseaux Sociaux</a></li>
+        </ul></div>
+        <div><div class="footer-col-title">Talencia Formation</div><ul class="footer-links">
+          <li><a href="../index.html#pourquoi">À propos</a></li>
+          <li><a href="../index.html#methode">Notre méthode</a></li>
+          <li><a href="../index.html#faq">FAQ</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul></div>
+        <div><div class="footer-col-title">Nous contacter</div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;opacity:.7;"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <a href="mailto:contact@talencia-formation.fr">contact@talencia-formation.fr</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;opacity:.7;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1 19.79 19.79 0 0 1 1.56 4.5 2 2 0 0 1 3.54 2.31h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.29 6.29l.87-.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+33780958768">+33 7 80 95 87 68</a>
+          </div>
+          <div class="footer-contact-item">📍 Colmar, Haut-Rhin</div>
+          <div style="margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.08);">
+            <div style="font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:8px;">Référent handicap</div>
+            <div style="font-size:.85rem;color:rgba(255,255,255,.7);font-weight:500;margin-bottom:10px;">M. Fabrizio</div>
+            <a href="../contact.html" style="display:inline-flex;align-items:center;gap:6px;font-size:.78rem;font-weight:600;color:rgba(255,255,255,.6);border:1px solid rgba(255,255,255,.2);border-radius:6px;padding:7px 12px;text-decoration:none;">Nous contacter →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 Talencia Formation. Tous droits réservés.</div>
+      <div class="footer-bottom-links">
+        <a href="../mentions-legales.html">Mentions légales</a>
+        <a href="../cgv.html">CGV</a>
+        <a href="../confidentialite.html">Confidentialité</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+<script>
+function openProgrammeModal(){document.getElementById('programmeModal').classList.add('open');document.body.classList.add('modal-locked');}
+function closeProgrammeModal(){document.getElementById('programmeModal').classList.remove('open');document.body.classList.remove('modal-locked');}
+document.addEventListener('DOMContentLoaded',function(){
+  var m=document.getElementById('programmeModal');
+  if(m){m.addEventListener('click',function(e){if(e.target===this)closeProgrammeModal();});}
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeProgrammeModal();});
+});
+</script>
+<script>
+function toggleMenu(){var menu=document.getElementById('mobileMenu');var btn=document.getElementById('hamburger');menu.classList.toggle('open');btn.classList.toggle('open');}
+function closeMenu(){document.getElementById('mobileMenu').classList.remove('open');document.getElementById('hamburger').classList.remove('open');}
+function toggleCat(btn){btn.classList.toggle('open');btn.nextElementSibling.classList.toggle('open');}
+document.addEventListener('click',function(e){var menu=document.getElementById('mobileMenu');var btn=document.getElementById('hamburger');if(menu&&btn&&!menu.contains(e.target)&&!btn.contains(e.target)){menu.classList.remove('open');btn.classList.remove('open');}});
+</script>
+</body></html>
